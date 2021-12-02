@@ -1,5 +1,7 @@
 var createError = require('http-errors');
 var express = require('express');
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://Koobz:koobz09@fm-cluster.byfby.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -8,6 +10,14 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  console.log("MongoDB Connection established!");
+  client.close();
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
