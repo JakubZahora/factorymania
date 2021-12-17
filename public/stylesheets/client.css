@@ -1,0 +1,238 @@
+body {
+    padding: 10px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #f4a460;
+  }
+  
+a {
+  color: #00B7FF;
+ } 
+
+.welcome {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+ }
+
+#dec {
+    text-decoration: none;
+}
+
+#center {
+    padding-bottom: 0.98%;
+}
+
+.toLeft {
+    float:left;
+    background-color: #fada5e;
+}
+
+.smallText {
+    padding: 9px 18px 9px;
+    background-color: lightsalmon;
+}
+
+.ironC {
+    background-color: #a0522d;
+}
+
+.copperC {
+    background-color: #d38764;
+}
+
+#toRight {
+    float:right; 
+}
+
+#factoryDiv {
+    display: block;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#factoryDiv ul {
+    display: inline-block;
+}
+
+#factoryDiv li {
+    list-style: none;
+    display:inline-table;
+}
+
+#factoryDiv p {
+    font-size:x-large;
+    border: 1px solid black;
+}
+
+#oreMine {
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#oreMine ul {
+    display: inline-block;
+}
+
+#oreMine li {
+    list-style: none;
+    display:inline-table;
+}
+#oreMine p {
+    font-size:x-large;
+    border: 1px solid black;
+}
+
+#upgradeDiv {
+    display: block;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#upgradeDiv ul {
+    display: inline-block;
+}
+
+#upgradeDiv li {
+    list-style: none;
+    display:inline-table;
+}
+
+#upgradeDiv p {
+    font-size:x-large;
+    border: 1px solid black;
+}
+
+#ironImg {
+    width:100px; /*width of your image*/
+    height:100px; /*height of your image*/
+    background-image:url("/public/img/ironOre.png");
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+}
+
+#image {
+    width: 600px;
+    height: 200px;
+}
+
+#nav {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-image: linear-gradient(0.75turn, #f4a460, #228b22, #f4a460 );
+}
+
+#nav li {
+    list-style:square; 
+    display: inline-grid; 
+    border: 2px solid black;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav p {
+    color: black;
+    display: block; 
+    font-family:arial; 
+    text-transform: uppercase;
+    font-size:large;
+    font-weight: bold; 
+    margin: 0;
+    padding: 9px 18px 9px;
+}
+
+#navv {
+    padding: 0;
+    margin: 0;
+    margin-top:0.25%;
+    text-align: center;
+}
+
+#navv li {
+    list-style:square;
+    display: inline-grid; 
+    border: 2px solid black;
+}
+
+#navv p {
+    color: black;
+    display: block; 
+    font-family:arial; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    margin: 0; 
+}
+
+#navb {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+}
+
+#navb li {
+    list-style:square; 
+    display: inline-grid; 
+    border: 2px solid black;
+}
+
+#navb a {
+    text-decoration: none;
+}
+
+#navb p {
+    color: black;
+    display: block; 
+    font-family:arial; 
+    text-transform: uppercase;
+    font-size:large;
+    font-weight: bold; 
+    margin: 0;
+    padding: 9px 18px 9px;
+}
+
+#navbb {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+}
+
+#navbb li {
+    list-style:square; 
+    display: inline-grid; 
+    border: 2px solid black;
+}
+
+#navbb a {
+    text-decoration: none;
+}
+
+#navbb p {
+    color: black;
+    display: block; 
+    font-family:arial; 
+    text-transform: uppercase;
+    font-size:large;
+    font-weight: bold; 
+    margin: 0;
+    padding: 9px 18px 9px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}

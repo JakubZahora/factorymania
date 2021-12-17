@@ -9,8 +9,7 @@ userSchema = new Schema( {
 	password: String,
 	passwordConf: String,
 	reg_time: {type: Date, default: Date.now},
-	Login1: {type: Date, default: Date.now},
-	Login2: {type: Date, default: Date.now}
+	gData: {type: String, default: "Blank"}
 }),
 
 User = mongoose.model('User', userSchema);

@@ -6,6 +6,37 @@ router.get('/', function (req, res, next) {
 	return res.render('register.ejs');
 });
 
+router.get('/load', function (req, res, next) {
+	User.findOne({unique_id:req.session.userId},function(err,data){
+		if(!data){
+			res.redirect('/');
+		}else{
+			res.send(data.gData);
+		}
+	});
+})
+
+router.put('/save', function (req, res, next) {
+	var lgData = req.body;
+
+	User.findOne({unique_id:req.session.userId},function(err,data){
+		if(!data){
+			res.redirect('/');
+		}else{
+			//console.log(data);
+			data.gData = JSON.stringify(lgData);
+			console.log(data);
+			data.save(function (err) {
+				if (err)
+				{
+					// TODO: Handle the error!
+				}
+			});
+		}
+	});
+	res.send("Success!")
+})
+
 
 router.post('/', function(req, res, next) {
 	console.log(req.body);
@@ -55,6 +86,10 @@ router.post('/', function(req, res, next) {
 			res.send({"Success":"password is not matched"});
 		}
 	}
+});
+
+router.get('/leaderboard', function (req, res, next) {
+	return res.render('leaderboard.ejs');
 });
 
 router.get('/login', function (req, res, next) {
