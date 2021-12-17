@@ -4,6 +4,13 @@ $( document ).ready(function() {
   document.getElementById("factoryDiv").style.display = "none";
   document.getElementById("upgradeDiv").style.display = "none";
   console.log( "ready!" );
+  var modal = document.getElementById("myModal");
+  modal.style.display = "block";
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 });
 
 var mine = document.getElementById("oreMine");
