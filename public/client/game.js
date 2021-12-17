@@ -21,10 +21,10 @@ var gameData = {
     money: 0,
     iron: 0,
     ironBars: 0,
-    ironRichness: 1,
+    ironRichness: 2,
     copper: 0,
     copperSheets: 0,
-    copperRichness: 1,
+    copperRichness: 2,
     ironDrill: 0,
     copperDrill: 0,
     orePerClick: 1,
@@ -68,19 +68,21 @@ function upgradeView() {
 }
 
 function purchaseIronDrill() {
-  if (gameData.money >= 100) {
-    gameData.money -= 100;
+  if (gameData.money >= 50) {
+    gameData.money -= 50;
     gameData.ironDrill = 1;
     document.getElementById('idrillB').onclick = null;
+    document.getElementById('ironUp').remove();
     updatePage();
   }
 }
 
 function purchaseCopperDrill() {
-  if (gameData.money >= 100) {
-    gameData.money -= 100;
+  if (gameData.money >= 50) {
+    gameData.money -= 50;
     gameData.copperDrill = 1;
     document.getElementById('cdrillB').onclick = null;
+    document.getElementById('copperUp').remove();
     updatePage();
   }
 }

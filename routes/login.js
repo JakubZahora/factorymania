@@ -88,6 +88,12 @@ router.post('/', function(req, res, next) {
 	}
 });
 
+router.get('/leader', function (req, res, next) {
+	User.find({}).then(function (user) {
+		res.send(JSON.stringify(user));
+	});
+})
+
 router.get('/leaderboard', function (req, res, next) {
 	return res.render('leaderboard.ejs');
 });

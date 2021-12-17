@@ -8,12 +8,12 @@
 </head>
 <body>
 	<div class="welcome">
-		<p>Welcome to your factory, <%= name %>!</p>
+		<h2>Welcome to your factory, <%= name %>!</h2>
 	</div>
 	<ul id='nav' class="noselect">
-		<li><p>Money</p><p id="gameMoney"></p></li>
-		<li><p>Pickaxe Level</p><p id="pickaxeLevel"></p></li>
 		<li onclick="reset()"><p>Reset</p><p>Progress</p></li>
+		<li><p>Pickaxe Level</p><p id="pickaxeLevel"></p></li>
+		<li><p>Money</p><p id="gameMoney"></p></li>
 		<li id="center"><a href="/user/leaderboard"><p><br>Leaderboard</p></a></li>
 		<li id="center"><a href="/user/logout"><p><br>Logout</p></a></li>
 	</ul>
@@ -39,8 +39,8 @@
 	</div>
 	<div id="upgradeDiv">
 		<ul class="noselect">
-			<li><div>*IRON DRILL IMG HERE*</div><p onclick="purchaseIronDrill()" class="ironC" id="idrillB">Purchase the Iron Drill!</p></li>
-			<li><div>*COPPER DRILL IMG HERE*</div><p onclick="purchaseCopperDrill()" class="copperC" id="cdrillB">Purchase the Copper Drill!</p></li>
+			<li id="ironUp"><div>*IRON DRILL IMG HERE*</div><p onclick="purchaseIronDrill()" class="ironC" id="idrillB">Purchase the Iron Drill! - $50</p></li>
+			<li id="copperUp"><div>*COPPER DRILL IMG HERE*</div><p onclick="purchaseCopperDrill()" class="copperC" id="cdrillB">Purchase the Copper Drill! - $50</p></li>
 		</ul>
 	</div>
 	<ul id='navbb' class="noselect">
